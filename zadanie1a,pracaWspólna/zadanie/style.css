@@ -1,0 +1,58 @@
+.contact {
+    background: #00b894;
+
+}
+
+.specific {
+    display: flex;
+}
+
+form {
+
+    flex: 2 0 0;
+
+    align-items: center;
+
+    padding: 30px;
+    text-align: center;
+    height: 400px;
+}
+
+
+input {
+    padding: 5px;
+    margin: 20px auto;
+    color: #fff;
+    display: block;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    padding: 5px;
+    margin: 20px auto;
+    color: #1e272e;
+    display: block;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    background-color: #78e08f;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.date {
+    flex: 1 0 0;
+
+
+
+}
