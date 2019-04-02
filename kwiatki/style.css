@@ -369,14 +369,36 @@ textarea::-ms-input-placeholder {
 
 /*Footer*/
 
-.footer {}
+.footer {
+    /* wyposrodkowanie - center */
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: -webkit-box;
+}
 
 
 .icon {
-    float: left;
     font-size: 0;
     margin: 48px 10px;
 
+}
+
+.icon .fa-instagram:before {
+    position: relative;
+    left: 17px;
+    top: 15px;
+}
+
+.icon .fa-behance:before {
+    position: relative;
+    left: 17px;
+    top: 15px;
+}
+
+.icon .fa-facebook-f:before {
+    position: relative;
+    left: 17px;
+    top: 15px;
 }
 
 .icon:after {
@@ -394,8 +416,3 @@ i {
     color: #fff;
 }
 
-.fa-instagram:before {
-    position: relative;
-    left: 17px;
-    top: 15px;
-}
