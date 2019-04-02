@@ -380,25 +380,15 @@ textarea::-ms-input-placeholder {
 .icon {
     font-size: 0;
     margin: 48px 10px;
-
+    position: relative;
 }
 
-.icon .fa-instagram:before {
-    position: relative;
-    left: 17px;
-    top: 15px;
-}
-
-.icon .fa-behance:before {
-    position: relative;
-    left: 17px;
-    top: 15px;
-}
-
-.icon .fa-facebook-f:before {
-    position: relative;
-    left: 17px;
-    top: 15px;
+.icon .fab:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .icon:after {
