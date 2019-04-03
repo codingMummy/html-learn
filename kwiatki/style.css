@@ -267,8 +267,13 @@ p {
 .image::after {
     content: "";
     opacity: 0.3;
-    right: 20px;
-    bottom: 20px;
+    left: 20px;
+    top: 20px;
+    background: #00b894;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -276,12 +281,13 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+
 }
 
 
 .skill-description {
     flex: 0 0 50%;
-    padding: 30px 15px;
+    padding: 33px 30px;
 }
 
 .skill-description p:last-of-type {
