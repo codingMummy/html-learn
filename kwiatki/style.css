@@ -137,7 +137,7 @@ body {
 
 .btn:hover {
     background-position: 0 100%;
-    color: #d2dae2;
+    color: #037ffa;
 }
 
 .btn-one {
@@ -173,10 +173,13 @@ body {
 }
 
 .btn-six {
-    border: 0;
+    border: none;
     background-color: transparent;
+    text-align: left;
+    padding: 0;
+    color: #2ed573;
+    margin: 36px 0;
 }
-
 
 /*intro*/
 
@@ -208,6 +211,8 @@ body {
 
 div .wrapper {
     flex: 0 0 33.333%;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 10px 15px;
     position: relative;
 }
@@ -222,7 +227,7 @@ p {
     text-align: left;
 }
 
-p:first-of-type {
+.content p:first-of-type {
     font-weight: 700;
 }
 
@@ -238,33 +243,49 @@ p:first-of-type {
     font-family: 'Signika', sans-serif;
 }
 
-.level {
+
+.wrapper-box {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .whole {
-    flex: 0 0 50%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-height: 300px;
     display: flex;
+    flex: 0 0 50%;
     margin: 0 0 50px 0;
-
-
-
 }
 
 .image {
-    flex: 0 0 50%;
+    max-width: 250px;
+    height: 100%;
+    position: relative;
+    flex: 1;
+    padding: 10px;
 }
+
+.image::after {
+    content: "";
+    opacity: 0.3;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 .skill-description {
     flex: 0 0 50%;
+    padding: 30px 15px;
 }
 
-img {
-    max-width: 250px;
-    height: 100%
+.skill-description p:last-of-type {
+    font-weight: 700;
 }
 
 .contact {
@@ -369,13 +390,24 @@ textarea::-ms-input-placeholder {
 
 /*Footer*/
 
+/*footer {
+    position: relative;
+}*/
+
+
 .footer {
     /* wyposrodkowanie - center */
     -webkit-box-align: center;
     -webkit-box-pack: center;
     display: -webkit-box;
-}
 
+    /* position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);*/
+
+
+}
 
 .icon {
     font-size: 0;
@@ -406,3 +438,23 @@ i {
     color: #fff;
 }
 
+
+/* Media */
+
+@media (max-width: 767px) {
+    div .wrapper {
+        flex-direction: column;
+    }
+
+    .wrapper-box {
+        flex-direction: column;
+    }
+
+    .whole {
+        max-width: 100%;
+        height: 150px;
+
+        flex-direction: column;
+    }
+
+}
