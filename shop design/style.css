@@ -29,9 +29,17 @@
     text-align: left;
 }
 
+div.icon {
+    font-size: 0;
+}
+
 .fab {
     font-size: 16px;
     padding: 5px;
+}
+
+.icon {
+    font-size: 0;
 }
 
 form {
@@ -45,17 +53,29 @@ input.text {
     padding-left: 15px;
 }
 
+footer {
+    background: #dfe4ea;
+}
 
 .justify-content-md-around {
     text-align: center;
 }
 
-input.submit {
+.rounded {
     width: 80px;
     color: #fff;
     background: #70a1ff;
-    border-radius: 7%;
     height: 30px;
     border-style: none;
 
+}
+
+.title {
+    color: #a4b0be;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.image3 {
+    padding-top: 30px;
 }
