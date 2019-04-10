@@ -1,0 +1,20 @@
+/*font-family: 'Roboto', sans-serif;*/
+
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    max-width: 900px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.author {
+    font-weight: 700;
+}
